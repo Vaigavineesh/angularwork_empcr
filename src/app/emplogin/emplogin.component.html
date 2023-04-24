@@ -1,0 +1,25 @@
+<div class="container">
+    <div class="row">
+        <div class="col-2"></div>
+        <div class="col-8 border p-5 shadow mt-3">
+            <form action="" [formGroup]="eloginform" (ngSubmit)="LOGIN()">
+                <div class="mb-3">
+                    <input type="text" class="form-control" placeholder="enter username" formControlName="username">
+                </div>
+                <div class="form-text text-danger" *ngIf="username?.touched && username?.invalid">enter valid user name</div>
+                <div class="mb-3">
+                    <input type="text" class="form-control" placeholder="enter password" formControlName="password">
+                </div>
+                <div class="form-text text-danger" *ngIf="password?.touched && password?.invalid">enter valid password</div>
+                <div class="mb-3">
+                    <input type="submit" [disabled]="eloginform.invalid" class="btn btn-info form-control" >
+                </div>
+                <div class="mb-3">
+                    new user?<a href="" routerLink="register">signup</a>
+                </div>
+                
+            </form>
+        </div>
+        <div class="col-2"></div>
+    </div>
+</div>

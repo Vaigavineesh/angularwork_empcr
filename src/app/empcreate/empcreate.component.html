@@ -1,0 +1,34 @@
+<div class="container">
+    <div class="row">
+        <div class="col-2"></div>
+        <div class="col-8 border shadow p-5 mt-3">
+            <form action="" [formGroup]="empForm" (ngSubmit)="saveEmp()">
+                <h1 text-center>ADD NEWEMLOYEE</h1>
+                <div class="mb-3">
+                    <input type="text" clas="form-control" placeholder="enter employee name" formControlName="name">
+                </div>
+                <!-- <div class="form-text text-danger" *ngIf="name?.touched && name?.invalid">enter name</div> -->
+                <div class="mb-3">
+                    <input type="text" clas="form-control" placeholder="enter email" formControlName="email">
+                </div>
+                <!-- <div class="form-text text-danger" *ngIf="email?.touched && email?.invalid">enter valid mail</div> -->
+                <div class="mb-3">
+                    <input type="text" clas="form-control" placeholder="enter deartment" formControlName="department">
+                </div>
+                <!-- <div class="form-text text-danger" *ngIf="department?.touched && department?.invalid">enter valid department</div> -->
+                <div class="mb-3">
+                    <input type="text" clas="form-control" placeholder="enter phone" formControlName="phone">
+                </div>
+                <!-- <div class="form-text text-danger" *ngIf="?phone.touched && phone?.invalid">enter valid ph</div> -->
+                <div class="mb-3">
+                    <input type="text" clas="form-control" placeholder="enter salary" formControlName="salary">
+                </div>
+                <!-- <div class="form-text text-danger" *ngIf="salary?.touched && salary?.invalid">enter valid data</div> -->
+                <div class="mb-3">
+                    <input type="submit" class="btn btn-info form-control">
+                </div>
+            </form>
+        </div>
+        <div class="col-2"></div>
+    </div>
+</div>
